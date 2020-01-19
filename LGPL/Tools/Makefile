@@ -50,10 +50,11 @@ endef
 GMP = gmp
 
 ifeq ($(os),Linux)
-  majorRelNo :=  $(basename $(shell cat /etc/redhat-release | awk '{print $$(NF-1)}'))
-  ifeq ($(majorRelNo),6)
+  # S. Sarris Jan 2020 - don't check redhat.  leave GMP= for any linux (using Debian 9 now)
+  #majorRelNo :=  $(basename $(shell cat /etc/redhat-release | awk '{print $$(NF-1)}'))
+  #ifeq ($(majorRelNo),6)
     GMP =
-  endif
+  #endif
 endif
 
 MODULES_TOOLS = emacs tat expat loki extjars antlr hibernate extpy cppunit getopt astyle swig xercesc xercesj castor $(GMP) xsddoc extidl vtd-xml oAW shunit2 log4cpp scxml_apache
