@@ -153,7 +153,7 @@ logging_OBJECTS 	=	logging loggingLoggable loggingXMLElement loggingXMLParser \
 						loggingLog4cpp loggingStopWatch
 						
 logging_LIBS    =	logging_idlStubs acsutil acscommonStubs baselogging log4cpp pthread rt TAO_CosNaming
-logging_LDFLAGS =	-gdb
+logging_LDFLAGS =	-ggdb
 logging_CFLAGS  = -DLOGGING_BUILD_DLL
 
 #log4cpplogging_OBJECTS 	:= 	loggingACSLoggingEvent loggingXmlLayout \
