@@ -1,0 +1,11 @@
+--- TAO/ACE_wrappers/ace/os_include/os_sched.h_6.3.0	2009-04-17 21:04:36.000000000 +0700
++++ TAO/ACE_wrappers/ace/os_include/os_sched.h	2020-01-21 09:48:05.991013178 +0700
+@@ -39,7 +39,7 @@
+ #if !defined (__cpu_set_t_defined) || !defined (ACE_HAS_CPU_SET_T)
+ #if defined (ACE_HAS_CPUSET_T)
+    typedef cpuset_t cpu_set_t;
+-#else
++#elif !defined (ACE_HAS_CPU_SET_T)
+ #  define ACE_CPU_SETSIZE 1024
+    typedef struct
+    {
