@@ -1,0 +1,35 @@
+#! /bin/bash
+#
+# who       when        what
+# --------  ----------  ----------------------------------------------
+# ssarris  2020-04-29  new script 
+#
+
+# Load functions
+. standardUtilities
+#
+# Fetch operating system and release version
+#
+os_discovery
+
+
+LOG=buildJTattoo.log
+#
+exec > $LOG 2>&1
+
+date
+
+if [ ! -e ../PRODUCTS/JTattoo-1.6.13.jar ]
+then
+  echo Error: JTattoo-1.6.13.jar missing
+  exit 2
+fi
+
+CWD=`pwd`
+cd ../PRODUCTS
+echo Copy JTattoo-1.6.13.jar to $ACSROOT/lib/endorsed
+cp -a  JTattoo-1.6.13.jar $ACSROOT/lib/endorsed
+cd $CWD
+
+echo JTattoo installation done!
+date
