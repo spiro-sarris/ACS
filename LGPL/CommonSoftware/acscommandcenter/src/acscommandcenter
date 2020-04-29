@@ -35,4 +35,10 @@
 # Set JVM_GC_LOG_NAME so that acsStartJava will run the JVM printing garbage collector details to file "acscommandcenter.gclog". 
 export JVM_GC_LOG_NAME=acscommandcenter
 
-acsStartJava -noDirectory -noexport -endorsed -D ACS.root=$ACSROOT -D ACS.cdbroot=$ACS_CDB alma.acs.commandcenter.CommandCenter $@
+{ 
+	acsStartJava -noDirectory -noexport -endorsed -D swing.defaultlaf=com.jtattoo.plaf.noire.NoireLookAndFeel -D ACS.root=$ACSROOT -D ACS.cdbroot=$ACS_CDB alma.acs.commandcenter.CommandCenter $@
+} ||
+{ 
+	acsStartJava -noDirectory -noexport -endorsed -D ACS.root=$ACSROOT -D ACS.cdbroot=$ACS_CDB alma.acs.commandcenter.CommandCenter $@
+}
+

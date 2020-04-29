@@ -11,3 +11,4 @@ omniORB-4.2.1-2.tar.bz2 https://downloads.sourceforge.net/project/omniorb/omniOR
 omniORBpy-4.2.1-2.tar.bz2 https://downloads.sourceforge.net/project/omniorb/omniORBpy/omniORBpy-4.2.1/omniORBpy-4.2.1-2.tar.bz2?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fomniorb%2Ffiles%2FomniORBpy%2FomniORBpy-4.2.1%2F&ts=1496017150&use_mirror=razaoinfo
 apache-maven-3.2.5-bin.tar.gz http://mirrors.advancedhosters.com/apache/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.tar.gz
 OpenDDS-3.5.1.tar.gz http://download.ociweb.com/OpenDDS/previous-releases/OpenDDS-3.5.1.tar.gz
+JTattoo-1.6.13.jar http://www.jtattoo.net/downloads/JTattoo-1.6.13.jar

@@ -248,6 +248,10 @@ fi
 # cd ../RTOS
 # ./buildRTOS
 
+# Add java LAF (Look and Feel) color theme for ACS Command Center
+echo  -n "buildJTattoo" 
+./buildJTattoo && echo_success || echo_failure
+
 echo "WARNING: Now log out and login again to make sure that"
 echo "         the environment is re-evaluated!"
 echo " "
